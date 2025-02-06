@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="a">SOBRE</a></li>
+                <li><a href="a">POLÍTICA DE PRIVACIDADE</a></li>
+                <li><a href="a">TERMOS DE USO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <h2>Cadastro de Usuário  do SUS</h2>
+        <form id="cadastroForm">
+           <section class="dadospessoais">
+                <div>
+                    <label class="name" for="nome">Nome:</label>
+                    <input type="name" id="nome" required>
+                </div>
+                <div class="info1">
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="number" id="cpf" maxlength="11" step="1" required>
+                    </div>
+                    <div>
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" id="dataNascimento" required>
+                    </div>
+                    
+                    <div class="sexo">
+                        <label class="sexo" for="sexo">Sexo:</label>
+                        <input type="radio" id="Masculino" name="sexo" value="Masculino"></radio>
+                        <label for="masculino">Masculino</label>
+                        
+                        <input type="radio" id="Feminino" name="sexo" value="Feminino"></radio>
+                        <label for="Feminino">Feminino</label>
+
+                    </div>
+                </div>
+           </section>
+
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" required>
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" required>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" required>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" required>
+
+            <label for="estado">Estado:</label>
+            <label for="estado">Escolha um estado:</label>
+            <select id="estado" name="estado">
+                <option value="AC">ACRE</option>
+                <option value="AL">ALAGOAS</option>
+                <option value="AP">AMAPÁ</option>
+                <option value="AM">AMAZONAS</option>
+                <option value="BA">BAHIA</option>
+                <option value="CE">CEARÁ</option>
+                <option value="DF">DISTRITO FEDERAL</option>
+                <option value="ES">ESPÍRITO SANTO</option>
+                <option value="GO">GOIÁS</option>
+                <option value="MA">MARANHÃO</option>
+                <option value="MT">MATO GROSSO</option>
+                <option value="MS">MATO GROSSO SO SUL</option>
+                <option value="MG">MINAS GERAIS </option>
+                <option value="PA">PARÁ</option>
+                <option value="PB">PARAÍBA</option>
+                <option value="PR">PARANÁ</option>
+                <option value="PE">PERNAMBUCO</option>
+                <option value="PI">PIAUI</option>
+                <option value="RJ">RIO DE JANEIRO</option>
+                <option value="RN">RIO GRANDE DO NORTE</option>
+                <option value="RS">RIO GRANDE DO SUL</option>
+                <option value="RO">RONDONIA</option>
+                <option value="RR">RORAIMA</option>
+                <option value="SC">SANTA CATARINA</option>
+                <option value="SP">SÃO PAULO</option>
+                <option value="SE">SERGIPE</option>
+                <option value="TO">TOCANTINS</option>
+            </select>
+
+            <label for="letro">Quais eletrodomésticos você possui?</label>
+            <div>
+                <input type="checkbox" id="eletro1" name="eletro1" value="TV">
+                <label for="eletro1">TV</label><br>
+
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

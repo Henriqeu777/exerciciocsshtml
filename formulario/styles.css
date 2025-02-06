@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #009739;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header {
+    background-color: #A7DFFF;
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+nav{
+    width: 100%;
+    background-color: #3E4095;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    text-align: center;
+    z-index: 1000; /* Mantém o menu acima dos outros elementos */
+    }
+nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        transition: color 0.3s;
+        font-weight: bold
+    }
+    
+nav ul li a:hover {
+        cursor: pointer;
+        color: #f4a460;
+    }
+
+.container {
+    margin-top: 50px;
+    background: #FFCC00;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    margin: 0 auto;
+}
+
+.dadospessoais{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.info1{
+    gap: 40px;
+    display: flex;
+    width: 100%;
+}
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input[type="name"]{
+    width: 98.5%;
+
+}
+.sexo{
+    display: flex;
+    flex-direction: row;
+}
+input, select {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
