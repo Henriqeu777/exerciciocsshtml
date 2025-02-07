@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="a">SOBRE</a></li>
+                <li><a href="a">POLÍTICA DE PRIVACIDADE</a></li>
+                <li><a href="a">TERMOS DE USO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h2>Cadastro de Usuário do SUS</h2>
+        <div class="card p-4 shadow">
+        <form id="cadastroForm">
+           
+                <div class="mb-3">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="name" id="nome"  class="form-control" required>
+                    </div>
+
+                    <div class="info1">
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF:</label>
+                            <input type="number" id="cpf" maxlength="11" step="1"  class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="dataNascimento" class="form-label">Data de Nascimento:</label>
+                            <input type="date" id="dataNascimento"  class="form-control" required>
+                        </div>
+
+                        <div class="sexo" class="mb-3">
+                            <label class="sexo" for="sexo" class="form-label">Sexo:</label>
+                            <input type="radio" id="Masculino" name="sexo" value="Masculino" class="form-control"></radio>
+                            <label for="masculino" class="form-label">Masculino</label>
+                            <input type="radio" id="Feminino" name="sexo" value="Feminino" class="form-control"></radio>
+                            <label for="Feminino" class="form-label">Feminino</label>
+
+                        </div>
+                    </div>
+                
+                <div class="mb-3">
+                <label for="rua" class="form-label">Rua:</label>
+                <input type="text" id="rua" required>
+                </div>
+                
+                <div class="mb-3">
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" required class="form-control">
+                </div>
+                
+                <div class="mb-3">
+                <label for="bairro" class="form-label">Bairro:</label>
+                <input type="text" id="bairro" required>
+                </div>
+                
+                <div class="mb-3">
+                <label for="cep" class="form-label">CEP:</label>
+                <input type="text" id="cep" required>
+                </div>
+
+                <div class="mb-3">
+                <label for="cidade" class="form-label">Cidade:</label>
+                <input type="text" id="cidade" required>
+                </div>
+
+                <div class="mb-3">
+                <label for="estado" class="form-label">Estado:</label>
+                <label for="estado" class="form-label">Escolha um estado:</label>
+                <select id="estado" name="estado" class="form-control">
+                    <option value="AC">ACRE</option>
+                    <option value="AL">ALAGOAS</option>
+                    <option value="AP">AMAPÁ</option>
+                    <option value="AM">AMAZONAS</option>
+                    <option value="BA">BAHIA</option>
+                    <option value="CE">CEARÁ</option>
+                    <option value="DF">DISTRITO FEDERAL</option>
+                    <option value="ES">ESPÍRITO SANTO</option>
+                    <option value="GO">GOIÁS</option>
+                    <option value="MA">MARANHÃO</option>
+                    <option value="MT">MATO GROSSO</option>
+                    <option value="MS">MATO GROSSO SO SUL</option>
+                    <option value="MG">MINAS GERAIS </option>
+                    <option value="PA">PARÁ</option>
+                    <option value="PB">PARAÍBA</option>
+                    <option value="PR">PARANÁ</option>
+                    <option value="PE">PERNAMBUCO</option>
+                    <option value="PI">PIAUI</option>
+                    <option value="RJ">RIO DE JANEIRO</option>
+                    <option value="RN">RIO GRANDE DO NORTE</option>
+                    <option value="RS">RIO GRANDE DO SUL</option>
+                    <option value="RO">RONDONIA</option>
+                    <option value="RR">RORAIMA</option>
+                    <option value="SC">SANTA CATARINA</option>
+                    <option value="SP">SÃO PAULO</option>
+                    <option value="SE">SERGIPE</option>
+                    <option value="TO">TOCANTINS</option>
+                </select>
+                </div>
+
+                <div class="mb-3">
+                <label for="letro" class="form-label">Quais eletrodomésticos você possui?</label>
+                </div>
+                    <div class="mb-3">
+                    <input type="checkbox" id="eletro1" name="eletro1" value="TV">
+                    <label for="eletro1" class="form-label">TV</label><br>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                <label for="escolaridade" class="form-label">Escolaridade:</label>
+                <input list="escolaridade-opcoes" id="escolaridade" name="escolaridade" class="form-control">
+                </div>
+                <datalist id="escolaridade-opcoes">
+                    <option value="Ensino Fundamental Incompleto">
+                    <option value="Ensino Fundamental Completo">
+                    <option value="Ensino Médio Incompleto">
+                    <option value="Ensino Médio Completo">
+                    <option value="Ensino Superior Incompleto">
+                    <option value="Ensino Superior Completo">
+                    <option value="Pós-Graduação">
+                    <option value="Mestrado">
+                    <option value="Doutorado">
+                </datalist>
+                <div class="mb-3">
+                <button type="submit">Cadastrar</button>
+                 </div>
+                </div>
+        </form>
+
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
